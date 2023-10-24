@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="764.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="utspbwl.pkg2021130002.DisplayPembalapController">
+   <children>
+      <TableView fx:id="tbvpembalap" layoutX="43.0" layoutY="90.0" prefHeight="320.0" prefWidth="657.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="16.0" prefHeight="53.0" prefWidth="386.0" text="Display Data Pembalap">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btntambah" layoutX="43.0" layoutY="437.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="67.0" prefWidth="106.0" text="Tambah" />
+      <Button fx:id="btnedit" layoutX="319.0" layoutY="437.0" mnemonicParsing="false" onAction="#editklik" prefHeight="67.0" prefWidth="106.0" text="Edit" />
+      <Button fx:id="btnkurang" layoutX="594.0" layoutY="437.0" mnemonicParsing="false" onAction="#kurangklik" prefHeight="67.0" prefWidth="106.0" text="Kurang" />
+      <Button fx:id="btnclose" layoutX="635.0" layoutY="43.0" mnemonicParsing="false" onAction="#closeklik" prefHeight="29.0" prefWidth="65.0" text="Close" />
+      <Button fx:id="btnawal" layoutX="184.0" layoutY="458.0" mnemonicParsing="false" onAction="#awalklik" text="|&lt;" />
+      <Button fx:id="btnsebelum" layoutX="236.0" layoutY="458.0" mnemonicParsing="false" onAction="#sebelumklik" text="&lt;" />
+      <Button fx:id="btnsesudah" layoutX="459.0" layoutY="458.0" mnemonicParsing="false" onAction="#sesudahklik" text="&gt;" />
+      <Button fx:id="btnakhir" layoutX="513.0" layoutY="458.0" mnemonicParsing="false" onAction="#akhirklik" text="&gt;|" />
+   </children>
+</AnchorPane>

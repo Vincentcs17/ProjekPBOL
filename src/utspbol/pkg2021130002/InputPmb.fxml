@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbwl.pkg2021130002.InputPmbController">
+   <children>
+      <Label layoutX="33.0" layoutY="92.0" text="Id Pembalap" />
+      <Label layoutX="29.0" layoutY="142.0" text="Nama Pembalap" />
+      <Label layoutX="29.0" layoutY="192.0" text="Tim" />
+      <Label layoutX="32.0" layoutY="236.0" text="Motor" />
+      <TextField fx:id="txtid" layoutX="131.0" layoutY="88.0" />
+      <TextField fx:id="txtnama" layoutX="131.0" layoutY="138.0" />
+      <TextField fx:id="txttim" layoutX="131.0" layoutY="188.0" />
+      <TextField fx:id="txtmotor" layoutX="131.0" layoutY="232.0" />
+      <Label layoutX="35.0" layoutY="29.0" text="Input Data Pembalap">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnsimpan" layoutX="14.0" layoutY="294.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="103.0" text="Simpan" />
+      <Button fx:id="btnbatal" layoutX="138.0" layoutY="294.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="103.0" text="Batal" />
+      <Button fx:id="btnkeluar" layoutX="262.0" layoutY="294.0" mnemonicParsing="false" onAction="#keluarklik" prefHeight="25.0" prefWidth="103.0" text="Keluar" />
+   </children>
+</AnchorPane>

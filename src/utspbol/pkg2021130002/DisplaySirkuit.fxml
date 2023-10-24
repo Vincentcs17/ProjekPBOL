@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="676.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="utspbwl.pkg2021130002.DisplaySirkuitController">
+   <children>
+      <Label layoutX="39.0" layoutY="26.0" prefHeight="53.0" prefWidth="386.0" text="Display Data Sirkuit">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbvsirkuit" layoutX="34.0" layoutY="104.0" prefHeight="200.0" prefWidth="609.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnclose" layoutX="572.0" layoutY="54.0" mnemonicParsing="false" onAction="#closeklik" text="Close" />
+      <Button fx:id="btntambah" layoutX="39.0" layoutY="346.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="53.0" prefWidth="79.0" text="Tambah" />
+      <Button fx:id="btnawal" layoutX="159.0" layoutY="360.0" mnemonicParsing="false" onAction="#awalklik" text="|&lt;" />
+      <Button fx:id="btnsebelum" layoutX="220.0" layoutY="360.0" mnemonicParsing="false" onAction="#sebelumklik" text="&lt;" />
+      <Button fx:id="btnedit" layoutX="284.0" layoutY="346.0" mnemonicParsing="false" onAction="#editklik" prefHeight="53.0" prefWidth="79.0" text="Edit" />
+      <Button fx:id="btnsesudah" layoutX="400.0" layoutY="360.0" mnemonicParsing="false" onAction="#sesudahklik" text="&gt;" />
+      <Button fx:id="btnakhir" layoutX="457.0" layoutY="360.0" mnemonicParsing="false" onAction="#akhirklik" text="&gt;|" />
+      <Button fx:id="btnkurang" layoutX="533.0" layoutY="346.0" mnemonicParsing="false" onAction="#kurangklik" prefHeight="53.0" prefWidth="79.0" text="Kurang" />
+   </children>
+</AnchorPane>
