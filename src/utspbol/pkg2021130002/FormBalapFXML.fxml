@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="utspbol.pkg2021130002.FormBalapFXMLController">
+   <children>
+      <Label layoutX="29.0" layoutY="21.0" text="Jadwal Balap MotoGP" />
+      <Label layoutX="29.0" layoutY="53.0" text="Kode Sirkuit" />
+      <TextField fx:id="txtkodesirkuit" layoutX="111.0" layoutY="49.0" prefHeight="25.0" prefWidth="242.0" />
+      <TableView fx:id="tbvbalap" layoutX="29.0" layoutY="100.0" onMouseClicked="#tbvbalapklik" prefHeight="256.0" prefWidth="542.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

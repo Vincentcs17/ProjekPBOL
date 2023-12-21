@@ -28,6 +28,7 @@ public class FXMLDocumentController implements Initializable {
     
     public static DbPembalap dtpmb = new DbPembalap();
     public static DbSirkuit dtsirkuit = new DbSirkuit();
+    public static DbBalap dtbalap = new DbBalap();
     
     @FXML
     private MenuItem DisPembalap;
