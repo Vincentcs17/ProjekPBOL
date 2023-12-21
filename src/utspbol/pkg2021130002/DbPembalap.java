@@ -38,7 +38,7 @@ public class DbPembalap {
             while (rs.next()) {
                 PmbModel p = new PmbModel();
                 p.setIdpembalap(rs.getString("IdPembalap"));
-                p.setNamapembalap(rs.getString("Nama"));
+                p.setNamapembalap(rs.getString("NamaPembalap"));
                 p.setTim(rs.getString("Team"));
                 p.setMotor(rs.getString("Motor"));
                
