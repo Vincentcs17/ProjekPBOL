@@ -37,10 +37,10 @@ public class DbPembalap {
             int i = 1;
             while (rs.next()) {
                 PmbModel p = new PmbModel();
-                p.setIdpembalap("IdPembalap");
-                p.setNamapembalap("Nama");
-                p.setTim("Team");
-                p.setMotor("Motor");
+                p.setIdpembalap(rs.getString("IdPembalap"));
+                p.setNamapembalap(rs.getString("Nama"));
+                p.setTim(rs.getString("Team"));
+                p.setMotor(rs.getString("Motor"));
                
                 tableData.add(p);
                 i++;

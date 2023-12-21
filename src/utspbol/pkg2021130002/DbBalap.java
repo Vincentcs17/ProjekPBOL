@@ -37,8 +37,8 @@ public class DbBalap {
             int i = 1;
             while (rs.next()) {
                 Balap b = new Balap();
-                b.setKodesirkuit("KodeSirkuit");
-                b.setIdpembalap("IdPembalap");
+                b.setKodesirkuit(rs.getString("KodeSirkuit"));
+                b.setIdpembalap(rs.getString("IdPembalap"));
                 b.setTanggal_balap(rs.getDate("TangggalBalap"));
                 b.setLap(rs.getInt("Lap"));
                

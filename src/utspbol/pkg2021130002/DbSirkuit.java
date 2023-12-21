@@ -37,9 +37,9 @@ public class DbSirkuit {
             int i = 1;
             while (rs.next()) {
                 SirkuitModel s = new SirkuitModel();
-                s.setKodesirkuit("KodeSirkuit");
-                s.setLokasi("Lokasi");
-                s.setNamasirkuit("NamaSirkuit");
+                s.setKodesirkuit(rs.getString("KodeSirkuit"));
+                s.setLokasi(rs.getString("Lokasi"));
+                s.setNamasirkuit(rs.getString("NamaSirkuit"));
                
                 tableData.add(s);
                 i++;
