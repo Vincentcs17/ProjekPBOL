@@ -82,7 +82,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void InPembalapKlik(ActionEvent event) {
         try{
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("InputPmp.fxml"));    
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("InputPmb.fxml"));    
         Parent root = (Parent)loader.load();
         Scene scene = new Scene(root);
         Stage stg=new Stage();
