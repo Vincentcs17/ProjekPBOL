@@ -108,19 +108,19 @@ public class FXMLDocumentController implements Initializable {
         stg.show();        
         } catch (IOException e){   e.printStackTrace();   }
     }
-    
+
     @FXML
-    private void DisBalap(ActionEvent event) {
-        try{  
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("FormBalapFXML.fxml"));    
-            Parent root = (Parent)loader.load();
-            Scene scene = new Scene(root);
-            Stage stg=new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
-            stg.setResizable(false);
-            stg.setIconified(false);
-            stg.setScene(scene);
-            stg.show();        
+    private void DisBalapKlik(ActionEvent event) {
+        try{
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("FormBalapFXML.fxml"));    
+        Parent root = (Parent)loader.load();
+        Scene scene = new Scene(root);
+        Stage stg=new Stage();
+        stg.initModality(Modality.APPLICATION_MODAL);
+        stg.setResizable(false);
+        stg.setIconified(false);
+        stg.setScene(scene);
+        stg.show();        
         } catch (IOException e){   e.printStackTrace();   }
     }
 }

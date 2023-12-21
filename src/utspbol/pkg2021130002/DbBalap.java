@@ -37,10 +37,10 @@ public class DbBalap {
             int i = 1;
             while (rs.next()) {
                 Balap b = new Balap();
-                b.setKodesirkuit(rs.getString("KodeSirkuit"));
-                b.setIdpembalap(rs.getString("IdPembalap"));
-                b.setTanggal_balap(rs.getDate("TangggalBalap"));
-                b.setLap(rs.getInt("Lap"));
+                b.setKodesirkuit(rs.getString("kodesirkuit"));
+                b.setIdpembalap(rs.getString("idpembalap"));
+                b.setTanggal_balap(rs.getDate("tanggal_Balap"));
+                b.setLap_balap(rs.getInt("lap_balap"));
                
                 tableData.add(b);
                 i++;
@@ -75,10 +75,10 @@ public class DbBalap {
         Koneksi con = new Koneksi();
         try {            
             con.bukaKoneksi();
-            con.preparedStatement = con.dbKoneksi.prepareStatement("update balap set idpembalap = ?, tanggal_balap = ?, lap = ?  where  kodesirkuit = ? ");
+            con.preparedStatement = con.dbKoneksi.prepareStatement("update balap set idpembalap = ?, tanggal_balap = ?, lap_balap = ?  where  kodesirkuit = ? ");
             con.preparedStatement.setString(1, getBalap().getIdpembalap());
             con.preparedStatement.setDate(2, getBalap().getTanggal_balap());
-            con.preparedStatement.setInt(3, getBalap().getLap());
+            con.preparedStatement.setInt(3, getBalap().getLap_balap());
             con.preparedStatement.setString(4, getBalap().getKodesirkuit());
             con.preparedStatement.executeUpdate();            
             berhasil = true;

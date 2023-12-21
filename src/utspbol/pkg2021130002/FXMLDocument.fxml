@@ -22,9 +22,9 @@
               <MenuItem fx:id="InSirkuit" mnemonicParsing="false" onAction="#InSirkuitKlik" text="Sirkuit" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Display Data Balap">
+            <Menu mnemonicParsing="false" text="Display Jadwal Balap">
               <items>
-                <MenuItem fx:id="DisBalap" mnemonicParsing="false" text="Data Balap" />
+                <MenuItem fx:id="DisBalap" mnemonicParsing="false" onAction="#DisBalapKlik" text="Data Balap" />
               </items>
             </Menu>
         </menus>

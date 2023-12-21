@@ -54,8 +54,8 @@ public class FormBalapFXMLController implements Initializable {
             col=new TableColumn("tanggal_balap");
             col.setCellValueFactory(new PropertyValueFactory<Balap, String>("tanggal_balap"));
             tbvbalap.getColumns().addAll(col);
-            col=new TableColumn("lap");
-            col.setCellValueFactory(new PropertyValueFactory<Balap, String>("lap"));
+            col=new TableColumn("lap_balap");
+            col.setCellValueFactory(new PropertyValueFactory<Balap, String>("lap_balap"));
             tbvbalap.getColumns().addAll(col);
             
             
@@ -69,7 +69,7 @@ public class FormBalapFXMLController implements Initializable {
 
     @FXML
     private void tbvbalapklik(MouseEvent event) {
-        txtkodesirkuit.setText(tbvbalap.getSelectionModel().getSelectedItem().getKodesirkuit());
+        
     }
     
 }

@@ -14,7 +14,15 @@ import java.sql.Date;
  */
 public class Balap {
     private String kodesirkuit, idpembalap;
-    private int lap;
+    private int lap_balap;
+
+    public int getLap_balap() {
+        return lap_balap;
+    }
+
+    public void setLap_balap(int lap_balap) {
+        this.lap_balap = lap_balap;
+    }
     private Date tanggal_balap;
 
     public String getKodesirkuit() {
@@ -31,14 +39,6 @@ public class Balap {
 
     public void setIdpembalap(String idpembalap) {
         this.idpembalap = idpembalap;
-    }
-
-    public int getLap() {
-        return lap;
-    }
-
-    public void setLap(int lap) {
-        this.lap = lap;
     }
 
     public Date getTanggal_balap() {
