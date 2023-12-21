@@ -52,7 +52,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void DisPembalapKlik(ActionEvent event) {
         try{  
-            FXMLLoader loader=new FXMLLoader(getClass().getResource(""));    
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("DisplayPembalap.fxml"));    
             Parent root = (Parent)loader.load();
             Scene scene = new Scene(root);
             Stage stg=new Stage();
@@ -67,7 +67,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void DisSirkuitKlik(ActionEvent event) {
         try{  
-            FXMLLoader loader=new FXMLLoader(getClass().getResource(""));    
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("DisplaySirkuit.fxml"));    
             Parent root = (Parent)loader.load();
             Scene scene = new Scene(root);
             Stage stg=new Stage();
@@ -82,7 +82,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void InPembalapKlik(ActionEvent event) {
         try{
-        FXMLLoader loader=new FXMLLoader(getClass().getResource(""));    
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("InputPmp.fxml"));    
         Parent root = (Parent)loader.load();
         Scene scene = new Scene(root);
         Stage stg=new Stage();
@@ -97,7 +97,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void InSirkuitKlik(ActionEvent event) {
         try{
-        FXMLLoader loader=new FXMLLoader(getClass().getResource(""));    
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("InputSirkuit.fxml"));    
         Parent root = (Parent)loader.load();
         Scene scene = new Scene(root);
         Stage stg=new Stage();
@@ -112,7 +112,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void DisBalap(ActionEvent event) {
         try{  
-            FXMLLoader loader=new FXMLLoader(getClass().getResource(""));    
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("FormBalapFXML.fxml"));    
             Parent root = (Parent)loader.load();
             Scene scene = new Scene(root);
             Stage stg=new Stage();
