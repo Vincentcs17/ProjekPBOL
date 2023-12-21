@@ -39,7 +39,7 @@ public class DbPembalap {
                 PmbModel p = new PmbModel();
                 p.setIdpembalap(rs.getString("IdPembalap"));
                 p.setNamapembalap(rs.getString("NamaPembalap"));
-                p.setTim(rs.getString("Team"));
+                p.setTim(rs.getString("Tim"));
                 p.setMotor(rs.getString("Motor"));
                
                 tableData.add(p);
