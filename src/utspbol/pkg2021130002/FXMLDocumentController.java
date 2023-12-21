@@ -38,6 +38,8 @@ public class FXMLDocumentController implements Initializable {
     private MenuItem InPembalap;
     @FXML
     private MenuItem InSirkuit;
+    @FXML
+    private MenuItem DisBalap;
 
     /**
      * Initializes the controller class.
@@ -107,4 +109,18 @@ public class FXMLDocumentController implements Initializable {
         } catch (IOException e){   e.printStackTrace();   }
     }
     
+    @FXML
+    private void DisBalap(ActionEvent event) {
+        try{  
+            FXMLLoader loader=new FXMLLoader(getClass().getResource(""));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        } catch (IOException e){   e.printStackTrace();   }
+    }
 }
